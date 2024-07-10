@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: apptest - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+ c:\gcc\build\BIN\arm-elf-as .\src\init.s -o .\obj\init.o
+.\src\init.s: Assembler messages:
+.\src\init.s:0: Warning: end of file not at end of a line; newline inserted
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\main.c -o .\obj\main.o
+src/main.c: In function `LnkShowMainMenu':
+src/main.c:223: warning: initialization makes integer from pointer without a cast
+src/main.c:313: warning: passing arg 1 of `atoi' from incompatible pointer type
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\kbtest.c -o .\obj\kbtest.o
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\public.c -o .\obj\public.o
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\systest.c -o .\obj\systest.o
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\comtest.c -o .\obj\comtest.o
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\wlstest.c -o .\obj\wlstest.o
+In file included from c:/gcc/build/include/time.h:32,
+                 from c:/gcc/build/include/sys/reent.h:14,
+                 from c:/gcc/build/include/stdio.h:48,
+                 from src/wlstest.c:4:
+c:/gcc/build/include/sys/types.h:59: warning: useless keyword or type name in empty declaration
+c:/gcc/build/include/sys/types.h:59: warning: empty declaration
+c:/gcc/build/include/sys/types.h:60: warning: useless keyword or type name in empty declaration
+c:/gcc/build/include/sys/types.h:60: warning: empty declaration
+src/wlstest.c: In function `conv_buf':
+src/wlstest.c:234: warning: comparison between pointer and integer
+src/wlstest.c:238: warning: assignment makes integer from pointer without a cast
+src/wlstest.c: At top level:
+src/wlstest.c:1591: warning: type mismatch with previous implicit declaration
+src/wlstest.c:1227: warning: previous implicit declaration of `SetGPRS'
+src/wlstest.c:1591: warning: `SetGPRS' was previously implicitly declared to return `int'
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\prnapi.c -o .\obj\prnapi.o
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\lnkshowinfo.c -o .\obj\lnkshowinfo.o
+src/lnkshowinfo.c: In function `lnkshowinfo':
+src/lnkshowinfo.c:40: warning: passing arg 1 of `Lib_ReadSN' makes pointer from integer without a cast
+src/lnkshowinfo.c:50: warning: passing arg 1 of `Lib_ReadTerminalType' makes pointer from integer without a cast
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\lnkadmin.c -o .\obj\lnkadmin.o
+src/lnkadmin.c: In function `ADM_GetEOD3':
+src/lnkadmin.c:303: warning: initialization makes integer from pointer without a cast
+src/lnkadmin.c:309: warning: passing arg 1 of `memset' makes pointer from integer without a cast
+src/lnkadmin.c:310: warning: passing arg 1 of `memset' makes pointer from integer without a cast
+src/lnkadmin.c: In function `ADM_GetRoutes3':
+src/lnkadmin.c:535: warning: passing arg 2 of `Lib_ComRecv' from incompatible pointer type
+src/lnkadmin.c:555: warning: assignment makes pointer from integer without a cast
+src/lnkadmin.c:559: warning: passing arg 2 of `Lib_ComRecv' from incompatible pointer type
+src/lnkadmin.c:562: warning: passing arg 1 of `sprintf' from incompatible pointer type
+src/lnkadmin.c:563: warning: passing arg 1 of `Lib_FileOpen' from incompatible pointer type
+src/lnkadmin.c:565: warning: passing arg 1 of `Lib_FileRemove' from incompatible pointer type
+src/lnkadmin.c:569: warning: passing arg 1 of `Lib_FileOpen' from incompatible pointer type
+src/lnkadmin.c: In function `CountRoutes':
+src/lnkadmin.c:643: warning: passing arg 1 of `sprintf' from incompatible pointer type
+src/lnkadmin.c:646: warning: passing arg 1 of `Lib_FileExist' from incompatible pointer type
+src/lnkadmin.c: In function `DeleteRoutes':
+src/lnkadmin.c:666: warning: passing arg 1 of `sprintf' from incompatible pointer type
+src/lnkadmin.c:671: warning: passing arg 1 of `Lib_FileExist' from incompatible pointer type
+src/lnkadmin.c:685: warning: passing arg 1 of `Lib_FileRemove' from incompatible pointer type
+src/lnkadmin.c: In function `ADM_GetEOD':
+src/lnkadmin.c:727: warning: initialization makes integer from pointer without a cast
+src/lnkadmin.c:748: warning: passing arg 2 of `Lib_ComRecv' from incompatible pointer type
+src/lnkadmin.c:818: warning: passing arg 2 of `Lib_ComRecv' from incompatible pointer type
+src/lnkadmin.c: In function `ADM_GetEOD2':
+src/lnkadmin.c:880: warning: initialization makes integer from pointer without a cast
+src/lnkadmin.c:901: warning: passing arg 2 of `Lib_ComRecv' from incompatible pointer type
+src/lnkadmin.c:995: warning: passing arg 2 of `Lib_ComRecv' from incompatible pointer type
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\lnkpos.c -o .\obj\lnkpos.o
+src/lnkpos.c: In function `LnkPosSale':
+src/lnkpos.c:199: warning: passing arg 1 of `strcpy' from incompatible pointer type
+src/lnkpos.c: In function `LnkGetStopByID':
+src/lnkpos.c:645: warning: passing arg 1 of `atoi' from incompatible pointer type
+src/lnkpos.c: In function `LnkPosRegister':
+src/lnkpos.c:698: warning: passing arg 1 of `sprintf' makes pointer from integer without a cast
+src/lnkpos.c:699: warning: passing arg 2 of `Lib_FilePutEnv' makes pointer from integer without a cast
+src/lnkpos.c: In function `ChooseRoute':
+src/lnkpos.c:1060: warning: passing arg 1 of `sprintf' makes pointer from integer without a cast
+src/lnkpos.c:1063: warning: passing arg 2 of `Lib_FilePutEnv' makes pointer from integer without a cast
+src/lnkpos.c: At top level:
+src/lnkpos.c:1090: warning: type mismatch with previous implicit declaration
+src/lnkpos.c:1020: warning: previous implicit declaration of `HighlightRouteItemBigFont'
+src/lnkpos.c:1090: warning: `HighlightRouteItemBigFont' was previously implicitly declared to return `int'
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\lnkprint.c -o .\obj\lnkprint.o
+ c:\gcc\build\BIN\arm-elf-gcc -O3 -Ic:\gcc\build\include -I..\inc  -mlittle-endian -mcpu=arm9 -c .\src\picc.c -o .\obj\picc.o
+ c:\gcc\build\BIN\arm-elf-ld -Tldscript -Lc:\gcc\build\lib -Lc:\gcc\build\libelf -L..\lib -o Movotek-demo.elf .\obj\init.o  .\obj\main.o  .\obj\kbtest.o  .\obj\public.o  .\obj\systest.o  .\obj\comtest.o  .\obj\wlstest.o  .\obj\prnapi.o  .\obj\lnkshowinfo.o  .\obj\lnkadmin.o  .\obj\lnkpos.o  .\obj\lnkprint.o  .\obj\picc.o  -lpc1000wlsapi(v20) -lpc1000api(v20)  -lc  -lgcc
+ elftobin Movotek-demo.elf Movotek-demo.bin PC1000---APP
+ELF2BIN - Command Line - DLL VERSION - v1.0 - by [big_fury]SiZiOUS
+http://www.sbibuilder.fr.st/ - Original package from Turrica/cygdrive/c/Users/Sergei/AppData/Local/Temp/elf2bin_tmp/sh-elf-objcopy: Warning: Output file cannot represent architecture UNKNOWN!
+n2K.
+
+elf2bin_console_dll.exe: Conversion of Movotek-demo.elf to Movotek-demo.bin completed.
+
+
+Convert ELF file to BIN file success!
+  File size=173244 bytes
+ 
+
+
+
+<h3>Results</h3>
+apptest.exe - 0 error(s), 45 warning(s)
+</pre>
+</body>
+</html>
